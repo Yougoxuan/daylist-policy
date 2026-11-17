@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DAYPLAN 隐私政策</title>
+<style>
+  :root {
+    --primary: #FF8A3D;
+    --accent: #FFC24B;
+    --bg: #FFF7EE;
+    --surface: #FFFFFF;
+    --text: #2E2620;
+    --sub: #8A7A6D;
+    --line: #F0E3D4;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 32px 20px 72px;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.85 -apple-system, "PingFang SC", "HarmonyOS Sans SC", "Microsoft YaHei", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  header { margin-bottom: 32px; }
+  .brand {
+    font: 600 13px/1 "Avenir Next", "Helvetica Neue", sans-serif;
+    letter-spacing: .42em;
+    color: var(--primary);
+    text-transform: uppercase;
+  }
+  h1 {
+    margin: 14px 0 10px;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: .01em;
+  }
+  .meta { color: var(--sub); font-size: 13px; line-height: 1.7; }
+  hr {
+    height: 1px;
+    border: 0;
+    margin: 28px 0;
+    background: linear-gradient(90deg, var(--line), transparent);
+  }
+  h2 {
+    margin: 36px 0 10px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  h2::before {
+    content: "";
+    display: inline-block;
+    width: 6px; height: 6px;
+    margin-right: 10px;
+    border-radius: 2px;
+    background: var(--accent);
+    transform: translateY(-3px);
+  }
+  p { margin: 10px 0; }
+  ul { margin: 10px 0; padding-left: 22px; }
+  li { margin: 6px 0; }
+  strong { color: var(--text); }
+  .card {
+    margin: 18px 0;
+    padding: 18px 20px;
+    background: var(--surface);
+    border-radius: 14px;
+    border: 1px solid var(--line);
+  }
+  table {
+    width: 100%;
+    margin: 14px 0;
+    border-collapse: collapse;
+    font-size: 14px;
+    background: var(--surface);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  th, td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--line); }
+  th { background: #FFFBF5; font-weight: 600; white-space: nowrap; }
+  tr:last-child td { border-bottom: 0; }
+  code {
+    padding: 1px 5px;
+    border-radius: 5px;
+    background: #FFF1E2;
+    font-size: 13px;
+    word-break: break-all;
+  }
+  footer {
+    margin-top: 44px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--sub);
+    font-size: 13px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #080B0F;
+      --surface: #10171D;
+      --text: #E4EBEC;
+      --sub: #8E9CA0;
+      --line: #1E2A31;
+      --primary: #00E0A4;
+    }
+    th { background: #0C1318; }
+    code { background: #16211F; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="brand">DAYPLAN</div>
+    <h1>隐私政策</h1>
+    <div class="meta">
+      更新日期：2026 年 11 月 17 日<br>
+      生效日期：2026 年 11 月 17 日
+    </div>
+  </header>
+
+  <p>本政策适用于鸿蒙应用 <strong>DAYPLAN</strong>（应用包名：<code>com.dayplan.worklist</code>，以下简称"本应用"），
+     由个人开发者提供（以下简称"开发者"）。</p>
+
+  <hr>
+
+  <h2>总则</h2>
+  <p>本应用是一款本地工作清单工具。<strong>开发者不设立服务器，不收集、不上传、不存储您的任何个人信息。</strong>
+     本政策的目的是把这件事逐条说清楚，而不是用长篇条款覆盖它。</p>
+
+  <h2>我们收集哪些信息</h2>
+  <p><strong>不收集任何个人信息。</strong>具体而言：</p>
+  <ul>
+    <li>本应用<strong>没有账号体系</strong>，不需要注册登录，不收集手机号、邮箱、姓名、身份证件、头像等任何身份信息；</li>
+    <li>本应用<strong>不申请</strong>通讯录、位置、相机、麦克风、相册、日历、运动健康等任何个人敏感权限；</li>
+    <li>本应用<strong>未接入</strong>任何第三方 SDK，包括但不限于统计分析、崩溃上报、广告投放、推送服务；</li>
+    <li>本应用<strong>不进行任何网络请求</strong>，没有服务端接口，也不含网页内容。</li>
+  </ul>
+
+  <h2>您的内容保存在哪里</h2>
+  <p>您在本应用中创建的清单内容（事项标题、完成状态、所属清单、日期、归档时间）保存在<strong>您设备的本地存储</strong>中，
+     具体为 HarmonyOS 提供的分布式键值数据库，由操作系统按应用沙箱隔离，其他应用无法读取。</p>
+  <div class="card">这些数据<strong>仅存在于您的设备上</strong>，开发者无法访问。</div>
+
+  <h2>跨设备同步说明</h2>
+  <p>当您在同一华为账号下登录多台设备（例如手机与鸿蒙电脑），并且设备处于可信组网状态时，
+     HarmonyOS 的分布式数据服务会在<strong>您的这些设备之间直接同步</strong>清单数据。</p>
+  <ul>
+    <li>同步由操作系统完成，<strong>不经过开发者的服务器</strong>（开发者也没有服务器）；</li>
+    <li>开发者无法查看、导出、留存同步过程中的任何内容；</li>
+    <li>若您不希望数据跨设备流动，不使用同一华为账号登录多台设备即可，本应用单机功能完全不受影响。</li>
+  </ul>
+
+  <h2>权限使用说明</h2>
+  <p>本应用仅申请一项权限：</p>
+  <table>
+    <tr><th>权限</th><th>用途</th><th>授权方式</th></tr>
+    <tr>
+      <td><code>ohos.permission.DISTRIBUTED_DATASYNC</code></td>
+      <td>在同一华为账号的设备之间同步清单数据</td>
+      <td>系统授权（system_grant），安装时授予，使用中不弹授权框</td>
+    </tr>
+  </table>
+  <p>该权限仅用于上述同步，<strong>不会读取本应用以外的任何数据</strong>。</p>
+
+  <h2>数据的删除</h2>
+  <ul>
+    <li><strong>删除单条</strong>：在清单项上向左滑动，点「删除」；5 秒内可点「撤销」恢复。删除后的数据在本地标记为已删除，不再显示。</li>
+    <li><strong>删除全部</strong>：在系统设置中卸载本应用，其沙箱内的全部数据会被一并清除。</li>
+    <li>由于开发者不持有任何数据副本，<strong>卸载后无法恢复</strong>，也没有"找回"通道。</li>
+  </ul>
+
+  <h2>未成年人保护</h2>
+  <p>本应用不面向 14 周岁以下儿童单独使用，也不收集任何年龄、身份信息。
+     若未成年人在监护人指导下使用，其产生的清单内容同样只保存在本地设备中。</p>
+
+  <h2>本政策的更新</h2>
+  <p>本政策如有更新，会在新版本的应用说明与本页面同时发布，并更新页首的"更新日期"。
+     若涉及您权利的重大变化，会在应用新版本首次启动时以显著方式提示。</p>
+
+  <h2>联系我们</h2>
+  <p>对本政策或数据处理有任何疑问，可通过以下方式联系开发者：</p>
+  <div class="card">邮箱：<strong>yougo.wood@foxmail.com</strong><br>
+    <span style="color:var(--sub);font-size:14px">通常在 15 个工作日内答复。</span></div>
+
+  <footer>DAYPLAN · 数据只在你自己的设备上。</footer>
+</main>
+</body>
+</html>
